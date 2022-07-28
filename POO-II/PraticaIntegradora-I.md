@@ -12,6 +12,11 @@ temos que construir), que nos permitirão rever os tópicos que estudamos.
 <p>1. Crie uma classe Pessoa que terá os seguintes atributos: nome, idade, ID (neste caso vamos
 representá-la como uma string de caracteres), peso e altura. Que tipo de dado você atribuiria
 às variáveis de instância? Como seria a estrutura básica da sua classe? </p>
+<p>Os tipos de dados que foram atribuídos às variáveis de instância estão de acordo com os tipos 
+de dados definidos na classe Pessoa, como nome do tipo String, idade como int, altura e peso como 
+double de acordo com as regras de negócios. Uma classe Pessoa com atributos e seus tipos, e outra 
+classe AppPessoa que possui a instância da classe Pessoa e atribuição de dados respeitando seus
+respectivos tipos, além da exibição dos resultados no console.</p>
 
 <p>2. Vamos criar diferentes construtores na classe Pessoa, um sem parâmetros, e o outro deve
 receber nome, idade e ID como parâmetros; e por fim criaremos um terceiro construtor que
@@ -25,6 +30,14 @@ objeto do tipo Pessoa para cada construtor que definimos na classe, lembre-se de
 nome significativo para as variáveis para atribuir cada objeto. A seguir, vamos criar outro
 objeto do tipo Pessoa e vamos construí-lo passando apenas um valor para o nome e outro
 para a idade no construtor. Isto é possivel? O que acontece se tentarmos fazer isso?</p>
+
+<p>Criar um objeto do tipo Pessoa para cada construtor que definimos na classe é necessário que 
+possua o mesmo nome, caracterizado pelos construtores criados com diferença de passagem ou não de 
+parâmetros como sobrecarga de métodos. Para o construtor solicitado, foi passado o id, nome e idade
+e posteriormente, gerado getters e setters.</p>
+<p>Na classe Main(), foi criada uma nova instância da classe Pessoa, passando o getters dos atributos de
+id, nome e idade da classe Pessoa. É possível realizar adaptações sem alterar a execução bem sucedida
+do projeto.</p>
 
 <p>5. Na classe Pessoa vamos implementar os seguintes métodos: calcularIMC(), a fórmula para
 calculá-lo é: peso/(altura^2) - (peso expresso em kg e altura em metros). Se este cálculo
